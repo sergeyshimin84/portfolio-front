@@ -18,7 +18,11 @@ html,body{
     padding-left: 11.68%;
     padding-right: 11.68%;
     margin: 0 auto;
-    
+    background: url(./images/bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom 200px center;
+    background-size: contain;
+
 @import 'module/header';
 @import 'module/main';
 @import 'module/footer';
@@ -30,5 +34,16 @@ html,body{
 .wrapper{
     padding-left: 0;
     padding-right: 0;
+    background-position: bottom 100px center;
+    background-size: contain;
+}
+}
+
+@media(max-width:425px){
+.wrapper{
+    padding-left: 0;
+    padding-right: 0;
+    background-position: bottom 150px center;
+    background-size: contain;
 }
 }

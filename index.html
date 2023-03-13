@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./js/jquerymin.js"></script>
 </head>
 <body>
     <div class='wrapper'>
@@ -24,22 +25,84 @@
         </header>
         <main>
 <section class="prime">
-            <div class="section-left avatar">Avatar</div>
-            <div class="section-right avatar-discription">Avatar description</div>
+            <div class="section-left avatar">
+                <img src="./images/avatar.png" alt="avatar">
+            </div>
+            <div class="section-right avatar-discription">
+                <h1>Имя Фамилия</h1>
+                <h3>Профессия</h3>
+                <p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Грамматики океана переписали
+                решила оксмокс, собрал, рыбного дал города последний, путь возвращайся своего не переписывается по всей снова буквоград
+                подзаголовок предупредила.</p>
+            </div>
 </section>
             
             <div class="main-box">
-<section class="section-left sertificate">sertificate</section>
-<section class="section-right projects">Projects</section>
-<section class="section-left competention">competention</section>
-<section class="section-right calculater">Calculater</section>
+<section class="section-left sertificate">
+<h3>Сертификаты</h3>
+    <!-- slider -->
+<div class="containerslider">
+    <div id="slider">
+    <!-- <img src="./images/1.png" alt="img">
+            <img src="./images/2.png" alt="img">
+            <img src="./images/3.png" alt="img"> -->
+</div>
+</div>
+    <!--  -->
+</section>
+<section class="section-right projects">
+<h3>
+    Выполненные проекты
+</h3>
+<div class="slider-projects">
+    <img src="./images/work1.png" alt="work1">
+    <img src="./images/work2.png" alt="work2">
+</div>
+
+</section>
+<section class="section-left competention">
+    <h3>Компетенции</h3>
+    <img src="./images/competantion.svg" alt="comp">
+</section>
+<section class="section-right calculater">
+   <h3>Калькулятор</h3>
+</section>
             </div>
            
 
-            <section class="feedback">Feedback</section>
+            <section class="feedback">
+                <h3>Обратная связь</h3>
+                <form action="">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Ваш e-mail">
+                    <textarea name="fidback" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+                    <input type="file" name="" id="">
+                    <input type="button" value="Отправить">
+                </form>
+            </section>
         </main>
     
-        <footer>My Footer</footer>
+        <footer>
+            <div class="footer-container">
+                <p>&#169;Все права защищены</p>
+                <a href="#">
+                    <img src="./images/vk.png" alt="vk">
+                </a>
+                <a href="#">
+                    <img src="./images/whatsapp.png" alt="whtsp">
+                </a>
+                <a href="#">
+                    <img src="./images/telegram.png" alt="tlg">
+                </a>
+                <a href="#" class="btn-up">
+                    <img src="./images/up.png" alt="up">
+                </a>
+            </div>
+        </footer>
     </div>
+   
+    <script src="./js/slider.js"></script>
+
+    <script src="./js/switch.js"></script>
 </body>
 </html>
