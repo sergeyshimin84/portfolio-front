@@ -1,32 +1,12 @@
 @import url("../fonts/fonts.css");
 @import url("root.css");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-ul {
-  list-style: none;
-}
+@import url("reset.css");
+@import url("global.css");
 
 body {
   font-family: 'Roboto';
   font-size: 16px;
   color: var(--black);
-}
-
-h2{
-  font-size: 32px;
-  font-weight: 500;
-}
-
-.container {
-  max-width: 1324px;
-  padding: 0 30px;
-  margin: 0 auto;
-  box-sizing: content-box;
 }
 
 .header-container {
@@ -80,10 +60,7 @@ header {
   align-items: center;
 }
 
-h1 {
-  font-family: "Playfair";
-  font-size: 48px;
-  font-weight: 500;
+.prime-heading {
   margin-bottom: 10px;
 }
 
