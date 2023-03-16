@@ -17,6 +17,10 @@ body {
 header {
     padding: 25px 0;
     margin-bottom: 60px;
+    @media(max-width: 320px) {
+        padding: 10px 0;
+        margin-bottom: 30px;
+    }
 }
   
 .header-switch{
@@ -52,6 +56,10 @@ header {
     gap: 20px;
     @media(max-width: 1024px) {
         max-height: 300px;
+    }
+    @media(max-width: 320px) {
+        grid-template-columns: 1fr;
+        gap: 10px; 
     }
 }
   
@@ -138,6 +146,16 @@ header {
     "ce ce ce ce ce co co co co co"
     "pr pr pr pr pr pr pr pr pr pr"
     "ca ca ca ca ca ca ca ca ca ca";
+    }
+    @media(max-width: 320px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(338px, auto);
+        margin-top: 343px;
+        grid-template-areas:
+    "ce"
+    "co"
+    "pr"
+    "ca";
     }
 }
   
