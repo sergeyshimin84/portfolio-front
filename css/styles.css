@@ -13,6 +13,12 @@ h2 {
   padding: 0 30px;
   margin: 0 auto;
   box-sizing: content-box; }
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 1024px; } }
+  @media (max-width: 320px) {
+    .container {
+      max-width: 320px; } }
 
 * {
   margin: 0;
@@ -85,6 +91,9 @@ header {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px; }
+  @media (max-width: 1024px) {
+    .prime-container {
+      max-height: 300px; } }
 
 .prime-img {
   position: relative;
@@ -100,26 +109,62 @@ header {
     left: 0;
     width: 100%;
     height: auto; }
+    @media (max-width: 1024px) {
+      .prime-img img {
+        max-width: 300px; } }
 
 .prime-text-box {
   display: flex;
   align-items: center; }
-  .prime-text-box h1, .prime-text-box h2 {
+  .prime-text-box h1 {
     margin-bottom: 10px; }
+    @media (max-width: 1024px) {
+      .prime-text-box h1 {
+        font-size: 32px; } }
+  .prime-text-box h2 {
+    margin-bottom: 10px; }
+    @media (max-width: 1024px) {
+      .prime-text-box h2 {
+        font-size: 24px; } }
   .prime-text-box p {
     max-width: 652px;
     line-height: 150%; }
+    @media (max-width: 1024px) {
+      .prime-text-box p {
+        font-size: 16px; } }
+
+.certificates {
+  grid-area: ce; }
+
+.projects {
+  grid-area: pr; }
+
+.competencies {
+  grid-area: co; }
+
+.calculator {
+  grid-area: ca; }
 
 .main-box {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: minmax(428px, auto);
+  grid-template-areas: "ce ce ce ce pr pr pr pr pr pr" "co co co co ca ca ca ca ca ca";
   gap: 20px;
   margin-bottom: 20px; }
   .main-box h2 {
     margin-bottom: 10px; }
+    @media (max-width: 1024px) {
+      .main-box h2 {
+        font-size: 24px; } }
   .main-box img {
     display: flex;
     width: 100%; }
+  @media (max-width: 1024px) {
+    .main-box {
+      grid-template-columns: repeat(10, 1fr);
+      grid-auto-rows: minmax(418px, auto);
+      grid-template-areas: "ce ce ce ce ce co co co co co" "pr pr pr pr pr pr pr pr pr pr" "ca ca ca ca ca ca ca ca ca ca"; } }
 
 .project-title {
   margin-bottom: 10px; }
