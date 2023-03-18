@@ -3,14 +3,6 @@
 @import url("reset.css");
 @import url("global.css");
 
-html {
-scroll-behavior: smooth;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Roboto';
   font-size: 16px;
@@ -30,7 +22,7 @@ header {
   justify-content: space-between;
 }
 
-.header-switch{
+.header-switch {
   display: inline-block;
   position: relative;
   width: 62px;
@@ -102,40 +94,6 @@ header {
   line-height: 150%;
 }
 
-@media(max-width:1040px) {
-  h1 {
-    font-size: 32px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-}
-
-@media(max-width:750px) {
-  .container {
-    padding: 0 10px;
-  }
-
-  .prime-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    overflow: hidden;
-  }
-
-  .prime-img {
-    min-width: 300px;
-    min-height: 300px;
-    padding-top: 0;
-  }
-
-  .prime-text-box {
-    text-align: center;
-  }
-}
-
 /*---- prime----</> */
 
 .main-box {
@@ -193,47 +151,106 @@ header {
   margin-bottom: 60px;
 }
 
+@media(max-width:1400px){
+  .main-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .certificates{
+    order: 1;
+  }
+
+  .competencies{
+    order: 2;
+  }
+
+  .projects{
+    order: 3;
+    width: 100%;
+  }
+
+  .calculator{
+    order: 4;
+  }
+}
+
+@media(max-width:1040px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media(max-width:750px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .prime-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+  }
+
+  .prime-img {
+    min-width: 300px;
+    min-height: 300px;
+    padding-top: 0;
+  }
+
+  .prime-text-box {
+    text-align: center;
+  }
+}
+
 /* ---footer---<> */
 
 footer {
   padding: 25px 0;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer-icons{
+.footer-icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-right: 30px;
 }
 
-.footer-icon{
+.footer-icon {
   height: 30px;
   width: auto;
 }
 
-.footer-icon:nth-child(2){
+.footer-icon:nth-child(2) {
   margin-left: 30px;
   margin-right: 30px;
 }
 
 .hover-image-scale svg {
-  transition: all 0.2s linear; 
+  transition: all 0.2s linear;
   transform: scale(1);
-  display: block; 
+  display: block;
 }
 
 
 .hover-image-scale svg:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
-.footer-up{
+.footer-up {
   background-color: inherit;
 }
 
