@@ -4,6 +4,10 @@
 @import url("global.css");
 
 html {
+scroll-behavior: smooth;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -26,7 +30,7 @@ header {
   justify-content: space-between;
 }
 
-.header-switch {
+.header-switch{
   display: inline-block;
   position: relative;
   width: 62px;
@@ -195,42 +199,38 @@ footer {
   padding: 25px 0;
 }
 
-.footer-container {
+.footer-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer-icons {
+.footer-icons{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-right: 30px;
 }
 
-.footer-icon {
+.footer-icon{
   height: 30px;
   width: auto;
 }
 
-.footer-icon:nth-child(2) {
+.footer-icon:nth-child(2){
   margin-left: 30px;
   margin-right: 30px;
 }
 
 .hover-image-scale svg {
-  transition: all 0.2s linear;
+  transition: all 0.2s linear; 
   transform: scale(1);
-  display: block;
+  display: block; 
 }
 
 
 .hover-image-scale svg:hover {
-  transform: scale(1.2);
-}
-
-.footer-up{
-  background-color: inherit;
+  transform: scale(1.2); 
 }
 
 /* ---footer---</> */
