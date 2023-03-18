@@ -3,21 +3,27 @@
 @import url("reset.css");
 @import url("global.css");
 
+html {
+scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto';
   font-size: 16px;
   color: var(--black);
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+/*--- header---<> */
 
 header {
   padding: 25px 0;
   margin-bottom: 60px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-switch{
@@ -42,10 +48,12 @@ header {
   background-color: var(--black);
 }
 
+/*--- header---</> */
+
 /* ---prime---<> */
 
 .prime {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .prime-container {
@@ -181,7 +189,44 @@ header {
   margin-bottom: 60px;
 }
 
+/* ---footer---<> */
+
 footer {
-  background-color: gray;
   padding: 25px 0;
 }
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.footer-icon{
+  height: 30px;
+  width: auto;
+}
+
+.footer-icon:nth-child(2){
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.hover-image-scale svg {
+  transition: all 0.2s linear; /* Время эффекта */
+  transform: scale(1);
+  display: block; 
+}
+
+
+.hover-image-scale svg:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+/* ---footer---</> */
