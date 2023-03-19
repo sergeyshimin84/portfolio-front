@@ -1,4 +1,16 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto-Regular.ttf"); }
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto-Medium.ttf"); }
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto-Light.ttf"); }
+@font-face {
+  font-family: "Playfair";
+  src: url("./PlayfairDisplay-Medium.ttf"); }
 /* Основной черный */
 /* Белый */
 /* Основной голубой */
@@ -135,7 +147,12 @@ header {
     height: auto; }
     @media (max-width: 1024px) {
       .prime-img img {
-        max-width: 300px; } }
+        display: block;
+        padding-top: 100%; } }
+  @media (max-width: 1024px) {
+    .prime-img {
+      position: relative;
+      height: 50%; } }
 
 .prime-text-box {
   display: flex;
@@ -197,6 +214,12 @@ header {
       grid-auto-rows: minmax(338px, auto);
       margin-top: 343px;
       grid-template-areas: "ce" "co" "pr" "ca"; } }
+
+.project-item[hidden] {
+  display: block; }
+  @media (max-width: 425px) {
+    .project-item[hidden] {
+      display: none; } }
 
 .project-title {
   margin-bottom: 10px; }
