@@ -1,10 +1,10 @@
-@import "./fonts/_fonts";
-@import "_global";
-@import "_reset.scss";
-@import "_root";
+@import "./fonts/fonts";
+@import "global";
+@import "reset";
+@import "root";
 
 body {
-    font-family: 'Roboto';
+    font-family: 'RobotoRegular';
     font-size: 16px;
     color:$black;
 }
@@ -99,6 +99,7 @@ header {
     display: flex;
     align-items: center;
     h1 {
+        font-family: 'Playfair';
         margin-bottom: 10px;
         @media(max-width: $maxWidth-medium) {
             font-size: 32px;

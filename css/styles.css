@@ -1,16 +1,16 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Roboto";
-  src: url("./Roboto-Regular.ttf"); }
+  font-family: "RobotoRegular";
+  src: url("../fonts/Roboto-Regular.ttf"); }
 @font-face {
-  font-family: "Roboto";
-  src: url("./Roboto-Medium.ttf"); }
+  font-family: "RobotoMedium";
+  src: url("../fonts/Roboto-Medium.ttf"); }
 @font-face {
-  font-family: "Roboto";
-  src: url("./Roboto-Light.ttf"); }
+  font-family: "RobotoLight";
+  src: url("../fonts/Roboto-Light.ttf"); }
 @font-face {
   font-family: "Playfair";
-  src: url("./PlayfairDisplay-Medium.ttf"); }
+  src: url("../fonts/PlayfairDisplay-Medium.ttf"); }
 /* Основной черный */
 /* Белый */
 /* Основной голубой */
@@ -76,7 +76,7 @@ a {
 /* Серый */
 /* Максимальная ширина */
 body {
-  font-family: 'Roboto';
+  font-family: 'RobotoRegular';
   font-size: 16px;
   color: #1C2127; }
 
@@ -158,6 +158,7 @@ header {
   display: flex;
   align-items: center; }
   .prime-text-box h1 {
+    font-family: 'Playfair';
     margin-bottom: 10px; }
     @media (max-width: 1024px) {
       .prime-text-box h1 {
