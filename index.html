@@ -92,33 +92,44 @@
           <h2 class="calculator-title">Калькулятор</h2>
           <form action="#">
             <p><b>Какой функционал должен быть у вашего сайта?</b></p>
-             <p><input name="calculator" type="radio" value="#">Лендинг</p>
-             <p><input name="calculator" type="radio" value="#">Портфолио</p>
-             <p><input name="calculator" type="radio" value="#">Социальная сеть</p>
-             <p><input name="calculator" type="radio" value="#">Блог</p>
-             <p><input name="calculator" type="radio" value="#">Интернет-магазин</p>
-           </form>
+            <p><input name="calculator" type="radio" value="#" /> Лендинг</p>
+            <p><input name="calculator" type="radio" value="#" /> Портфолио</p>
+            <p>
+              <input name="calculator" type="radio" value="#" /> Социальная сеть
+            </p>
+            <p><input name="calculator" type="radio" value="#" /> Блог</p>
+            <p>
+              <input name="calculator" type="radio" value="#" />
+              Интернет-магазин
+            </p>
+          </form>
         </section>
       </div>
       <section class="feedback">
-        <h2 class="feedback-title">Обратная связь</h2>
-        <div class="feedback-title-theme">Тема обращения</div>
-        <select name="theme" required="required">
-          <option value="#">Выберите вариант</option>
-          <option>Вопрос по работе сервиса</option>
-          <option>Помощь в расчете</option>
-          <option>Сотрудничество</option>
-          <option>Пожелания / предложения</option>
-        </select>
-        <div>Ваше имя</div>
-        <input type="text" name="name" required="required" />
-        <div>Ваш email</div>
-        <input type="email" name="email" required="required" />
-        <div>Ваше сообщение</div>
-        <p><input type="file" name="photo" multiple accept="image/*,image/jpeg">
-        <input type="submit" value="Отправить"></p>
-        <textarea name="message"></textarea>
-        <input type="submit" name="submit_btn" value="Отправить" />
+        <div class="feedback-box">
+          <h2 class="feedback-title">Обратная связь</h2>
+          <div class="feedback-title-theme">Тема обращения</div>
+          <select name="theme" required="required">
+            <option value="#">Выберите вариант</option>
+            <option>Вопрос по работе сервиса</option>
+            <option>Помощь в расчете</option>
+            <option>Сотрудничество</option>
+            <option>Пожелания / предложения</option>
+          </select>
+          <input type="text" name="name" required="required" placeholder="Ваше имя"/>
+          <input type="email" name="email" required="required" placeholder="Ваш email"/>
+          <p>
+            <input
+              type="file"
+              name="photo"
+              multiple
+              accept="image/*,image/jpeg" placeholder="Ваше сообщение"
+            />
+            <input type="submit" value="Отправить" />
+          </p>
+          <textarea name="message"></textarea>
+          <input type="submit" name="submit_btn" value="Отправить" />
+        </div>
       </section>
     </main>
     <footer>

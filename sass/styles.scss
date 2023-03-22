@@ -209,6 +209,28 @@ header {
     display: flex;
     width: 100%;
 }
+
+.calculator {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 380px;
+    form {
+        background: $light-grey;
+        p {
+            padding-top: 25px;
+            border: 1px;
+            border-color: $black;
+        }
+        b {
+            font-size: 20px;
+        }
+        input {
+            font-size: 16px;
+        }
+    }
+}
+
   
 .calculator-title {
     margin-bottom: 10px;
@@ -216,25 +238,15 @@ header {
   
 .feedback {
     display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
-}
-
-// .feedback-img {
-//     @media (max-width: $maxWidth-min) {
-//         img:before {
-//             background-image: url(../img/feedback-min.svg);
-//         }
-//     }
-// }
-
-.feedback-img {
-    @media (max-width: $maxWidth-min) {
-        :before {
-            background-image: url(../img/feedback-min.svg);
-        }
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .feedback-box {
+        max-width: 430px;
     }
 }
+
+
 
 /*---- main----</> */
 

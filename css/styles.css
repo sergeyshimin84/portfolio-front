@@ -243,17 +243,32 @@ header {
   display: flex;
   width: 100%; }
 
+.calculator {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-height: 380px; }
+  .calculator form {
+    background: #d9d9d933; }
+    .calculator form p {
+      padding-top: 25px;
+      border: 1px;
+      border-color: #1C2127; }
+    .calculator form b {
+      font-size: 20px; }
+    .calculator form input {
+      font-size: 16px; }
+
 .calculator-title {
   margin-bottom: 10px; }
 
 .feedback {
   display: flex;
-  justify-content: center;
-  margin-bottom: 60px; }
-
-@media (max-width: 425px) {
-  .feedback-img :before {
-    background-image: url(../img/feedback-min.svg); } }
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+  .feedback .feedback-box {
+    max-width: 430px; }
 
 /*---- main----</> */
 /* ---footer---<> */
