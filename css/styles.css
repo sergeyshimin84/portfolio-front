@@ -251,6 +251,10 @@ header {
   justify-content: center;
   margin-bottom: 60px; }
 
+@media (max-width: 425px) {
+  .feedback-img :before {
+    background-image: url(../img/feedback-min.svg); } }
+
 /*---- main----</> */
 /* ---footer---<> */
 footer {
