@@ -54,15 +54,26 @@ ul {
 
 button,
 input {
-  font-family: inherit; }
-
-button {
+  font-family: inherit;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent; }
 
 a {
   text-decoration: none;
   color: inherit; }
+
+textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
 
 /* Основной черный */
 /* Белый */
@@ -262,15 +273,35 @@ header {
 .calculator-title {
   margin-bottom: 10px; }
 
+.dcta-title-container
+.dcta-title-container:before {
+  background: #78B1EA; }
+
+/*---- main----</> */
+/*---- feedback ----</>*/
 .feedback {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%; }
-  .feedback .feedback-box {
-    max-width: 430px; }
+  width: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, #78B1EA 0%, #FFFFFF 99.48%); }
+  @media (max-width: 425px) {
+    .feedback {
+      max-width: 300px;
+      background: none; } }
 
-/*---- main----</> */
+.feedback-box {
+  display: grid;
+  grid-template-rows: 40px 40px 40px 160px 40px 40px;
+  gap: 10px; }
+  .feedback-box input, .feedback-box textarea {
+    border: 1px solid #9ec7f0;
+    background: #ffffff; }
+  .feedback-box .feedback-title-btn {
+    background: #1C548D;
+    color: #ffffff; }
+
+/*---- feedback ----</>*/
 /* ---footer---<> */
 footer {
   padding: 25px 0; }

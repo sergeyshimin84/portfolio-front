@@ -102,22 +102,13 @@
     <section class="feedback">
       <div class="feedback-box">
         <h2 class="feedback-title">Обратная связь</h2>
-        <div class="feedback-title-theme">Тема обращения</div>
-        <select name="theme" required="required">
-          <option value="#">Выберите вариант</option>
-          <option>Вопрос по работе сервиса</option>
-          <option>Помощь в расчете</option>
-          <option>Сотрудничество</option>
-          <option>Пожелания / предложения</option>
-        </select>
-        <input type="text" name="name" required="required" placeholder="Ваше имя" />
-        <input type="email" name="email" required="required" placeholder="Ваш email" />
+        <input class="feedback-title-name" type="text" name="name" required="required" placeholder="Ваше имя" />
+        <input class="feedback-title-email" type="email" name="email" required="required" placeholder="Ваш email" />
+        <textarea name="message" placeholder="Ваше сообщение"></textarea>
         <p>
-          <input type="file" name="photo" multiple accept="image/*,image/jpeg" placeholder="Ваше сообщение" />
-          <input type="submit" value="Отправить" />
+          <input class="feedback-title-message" type="file" name="photo" multiple accept="image/*,image/jpeg" placeholder="Прикрепить файл" />
         </p>
-        <textarea name="message"></textarea>
-        <input type="submit" name="submit_btn" value="Отправить" />
+        <input class="feedback-title-btn" type="submit" name="submit_btn" value="Отправить" />
       </div>
     </section>
   </main>
