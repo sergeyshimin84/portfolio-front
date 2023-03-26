@@ -1,7 +1,13 @@
-.slider-container {
+.certificates-slider-container,
+.projects-slider-container {
   position: relative;
   width: 100%;
   overflow: hidden;
+}
+
+.projects-slider-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .slider-track {

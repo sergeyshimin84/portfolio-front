@@ -52,8 +52,7 @@ h2 {
 ul {
   list-style: none; }
 
-button,
-input {
+button {
   font-family: inherit;
   border: none;
   cursor: pointer;
@@ -62,6 +61,15 @@ input {
   font: inherit;
   color: inherit;
   background-color: transparent; }
+
+input {
+  outline: none;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
 
 a {
   text-decoration: none;
@@ -86,10 +94,15 @@ textarea {
 /* Зеленый для валидных инпутов*/
 /* Серый */
 /* Максимальная ширина */
-.slider-container {
+.certificates-slider-container,
+.projects-slider-container {
   position: relative;
   width: 100%;
   overflow: hidden; }
+
+.projects-slider-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
 
 .slider-track {
   display: flex;
@@ -203,7 +216,7 @@ textarea {
   background-color: #333; }
 
 body {
-  font-family: 'RobotoRegular';
+  font-family: "RobotoRegular";
   font-size: 16px;
   color: #1C2127; }
 
@@ -285,7 +298,7 @@ header {
   display: flex;
   align-items: center; }
   .prime-text-box h1 {
-    font-family: 'Playfair';
+    font-family: "Playfair";
     margin-bottom: 10px; }
     @media (max-width: 1024px) {
       .prime-text-box h1 {
@@ -389,9 +402,8 @@ header {
 .calculator-title {
   margin-bottom: 10px; }
 
-.dcta-title-container
-.dcta-title-container:before {
-  background: #78B1EA; }
+.dcta-title-container .dcta-title-container:before {
+  background: #78b1ea; }
 
 /*---- main----</> */
 /*---- feedback ----</>*/
@@ -400,7 +412,7 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background: radial-gradient(50% 50% at 50% 50%, #78B1EA 0%, #FFFFFF 99.48%); }
+  background: radial-gradient(50% 50% at 50% 50%, #78b1ea 0%, #ffffff 99.48%); }
   @media (max-width: 425px) {
     .feedback {
       max-width: 300px;
@@ -408,19 +420,37 @@ header {
 
 .feedback-box {
   display: grid;
-  grid-template-rows: 40px 40px 40px 160px 40px 40px;
-  gap: 10px; }
-  .feedback-box input, .feedback-box textarea {
+  grid-template-rows: 40px 40px 40px 160px 20px 40px;
+  gap: 10px;
+  width: 425px; }
+  @media (max-width: 425px) {
+    .feedback-box {
+      width: 300px;
+      margin: 0 auto; } }
+  .feedback-box input,
+  .feedback-box textarea {
     border: 1px solid #9ec7f0;
     background: #ffffff; }
   .feedback-box .feedback-title-btn {
-    background: #1C548D;
+    background: #1c548d;
     color: #ffffff; }
+
+.feedback-title-message {
+  width: 11px;
+  height: 22px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent url(../img/clip.svg) no-repeat center top;
+  text-indent: -1000em;
+  cursor: pointer;
+  cursor: hand; }
 
 /*---- feedback ----</>*/
 /* ---footer---<> */
 footer {
-  padding: 25px 0; }
+  padding: 25px 0;
+  margin-top: 80px; }
 
 .footer-container {
   display: flex;
