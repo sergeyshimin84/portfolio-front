@@ -1,5 +1,5 @@
 body {
-    max-width: 1200px;
+    /* max-width: 1200px; */
 }
 
 .container {
@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    font-size: clamp(1rem, 0.5rem + 2vw, 2.5rem);
+    font-size: clamp(1rem, 0.5rem + 2.5vw, 3rem);
 }
 
 h2 {
