@@ -1,3 +1,5 @@
+@import url(./fonts.css);
+
 .header-container {
     min-height: 200px;
     background: #0e0e0e;
@@ -7,6 +9,7 @@
 }
 
 .heading {
+    font-family: 'Marck Script';
     color: white;
     align-items: center;
     margin-left: 10%;
