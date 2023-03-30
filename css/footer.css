@@ -1,7 +1,8 @@
 .footer-container {
     font-family: 'Marck Script';
     min-height: 200px;
-    background: #0e0e0e;
+    background: linear-gradient(#0e0e0eee, #0e0e0ece);
+    /* background: #0e0e0e; */
     grid-auto-flow: column;
     color: white;
     font-size: clamp(1rem, 1.5rem, 2rem);
