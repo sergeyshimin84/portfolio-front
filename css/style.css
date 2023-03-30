@@ -2,40 +2,5 @@
 @import url(./reset.css);
 @import url(./global.css);
 @import url(./header.css);
+@import url(./calculator.css);
 @import url(./footer.css);
-
-/* .greeting {
-    min-height: 400px;
-    border: dashed red;
-    background: white;
-}
-
-.marketing {
-    min-height: 400px;
-    border: dashed red;
-    background: #0e0e0e;
-}
-
-.competencies {
-    min-height: 400px;
-    border: dashed red;
-    background: white;
-}
-
-.calculator {
-    min-height: 400px;
-    border: dashed red;
-    background: #0e0e0e;
-}
-
-.developers {
-    min-height: 400px;
-    border: dashed red;
-    background: white;
-}
-
-.feedback {
-    min-height: 400px;
-    border: dashed red;
-    background: #0e0e0e;
-} */
