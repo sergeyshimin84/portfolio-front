@@ -2,8 +2,7 @@
 
 .header-container {
     min-height: 200px;
-    background: linear-gradient(#0e0e0eee, #0e0e0ece);
-    /* background: #0e0e0e; */
+    background: #0e0e0e;
     grid-template-columns: repeat(1fr, minmax(200px, 1fr));
     grid-auto-flow: column;
     grid-gap: 1rem;
@@ -19,7 +18,7 @@
 /* анимация heading */
 
 .header-logo {
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: slidein;
 }
 
