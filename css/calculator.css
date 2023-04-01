@@ -1,6 +1,11 @@
+:root {
+    --shadow: 0 5px 10px -5px #00000080;
+}
+
 .calculator {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
+    font-family: 'Roboto';
 }
 
 .calculator p {
@@ -11,7 +16,6 @@
     display: grid;
     grid-template-rows: 1fr, 3fr, 2fr;
     row-gap: 1fr;
-    /* min-height: 400px; */
 }
 
 .cta-header-container, .top-cta-container {
@@ -20,7 +24,8 @@
 
 .minute {
     display: flex; 
-    justify-content: center;  
+    justify-content: center;
+    margin-top: 1%;  
 }
 
 .radio-group {
@@ -30,7 +35,7 @@
 }
 
 .radio {
-    box-shadow: 0 0 10px 5px #dddddd;
+    box-shadow: var(--shadow);
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
@@ -51,6 +56,11 @@
 }
 
 .button-next {
-    /* border: 1px solid; */
-    box-shadow: 0 0 10px 5px #dddddd;
+    min-height: 30px;
+    /* font-size: 30px; */
+    box-shadow: var(--shadow);
+}
+
+.feedback-input {
+    box-shadow: var(--shadow);
 }
