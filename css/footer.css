@@ -1,6 +1,6 @@
 .footer-container {
     font-family: 'Marck Script';
-    min-height: 200px;
+    min-height: 150px;
     background: #0e0e0e;
     grid-auto-flow: column;
     color: white;

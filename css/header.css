@@ -1,7 +1,7 @@
 /* @import url(./fonts.css); */
 
 .header-container {
-    min-height: 200px;
+    min-height: 150px;
     background: #0e0e0e;
     grid-template-columns: repeat(1fr, minmax(200px, 1fr));
     grid-auto-flow: column;
